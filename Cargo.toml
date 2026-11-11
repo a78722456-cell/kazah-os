@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "kernel", "userspace/ahci", "userspace/crash_service", "userspace/device_manager", "userspace/driver_manager", "userspace/libkazah", "userspace/ramdisk", "userspace/service_manager", "userspace/stress_churn", "userspace/stress_crash", "userspace/stress_device_snap", "userspace/stress_driver_crash", "userspace/stress_driver_rebind", "userspace/stress_ipc", "userspace/stress_kill", "userspace/stress_mem", "userspace/stress_pci", "userspace/stress_registry", "userspace/stress_spawn", "userspace/stress_storage_concurrent", "userspace/stress_storage_flood", "userspace/stress_storage_reset", "userspace/test_service", "userspace/volume_manager", "userspace/stress_volume_manager", "userspace/stress_security", "userspace/stress_vfs",
+]
+resolver = "2"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+lto = true
+opt-level = 3

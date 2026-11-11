@@ -1,0 +1,35 @@
+# Rust & Cargo build artifacts
+/target/
+**/target/
+/build/
+**/build/
+
+# Operating system ISO and boot images
+/iso_root/
+*.iso
+*.img
+*.bin
+
+# Temporary and log files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archives
+*.7z
+*.zip
+*.tar
+*.gz
+*.rar
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
